@@ -1,0 +1,83 @@
+Step: build-step-credential-initializer-w2dzb:
+
+{"level":"warn","ts":1556097858.9116557,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/backport-container-name-fix\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1556097858.9133544,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Step: build-step-git-source-lbaovy-jenkins-serverless-quick-rnpmb:
+
+{"level":"warn","ts":1556097859.5968502,"logger":"fallback-logger","caller":"logging/config.go:65","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/backport-container-name-fix\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1556097859.8493385,"logger":"fallback-logger","caller":"git-init/main.go:99","msg":"Successfully cloned \"https://github.com/lbaovy/jenkins-serverless-quickstart\" @ \"v0.0.3\" in path \"/workspace/source\""}
+Step: build-step-place-tools:
+
+Step: build-step-git-merge:
+
+Warning failed to load version: failed to parse version -dev+9e73adc0b: No Major.Minor.Patch elements found
+time="2019-04-24T09:24:23Z" level=info msg="got "
+Using SHAs from PULL_REFS=master:
+time="2019-04-24T09:24:23Z" level=warning msg="no SHAs to merge, falling back to initial cloned commit"
+Step: build-step-setup-**-git-credentials:
+
+Generated Git credentials file /workspace/xdg_config/git/credentials
+Step: build-step-build-container-build:
+
+[36mINFO[0m[0000] Downloading base image jenkinsxio/jenkinsx:0.0.43 
+ERROR: logging before flag.Parse: E0424 09:24:28.745856      11 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+ERROR: logging before flag.Parse: E0424 09:24:28.748121      11 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+2019/04/24 09:24:28 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0000] Error while retrieving image from cache: getting file info: stat /workspace/sha256:606384493cf478a906aa9e73daf83a96d51d40c87aba6631f6a961b036e7653d: no such file or directory 
+[36mINFO[0m[0000] Downloading base image jenkinsxio/jenkinsx:0.0.43 
+2019/04/24 09:24:29 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0000] Executing 0 build triggers                   
+[36mINFO[0m[0000] Using files from context: [/workspace/source/plugins.txt] 
+[36mINFO[0m[0000] Checking for cached layer 10.3.240.243:5000/jenkins-x-238407/cache:be70219c30c4b0f287e76f771a06fe198a0b5849be7b4b98af0c3c3679d935f6... 
+2019/04/24 09:24:29 No matching credentials were found, falling back on anonymous
+[36mINFO[0m[0000] Using caching version of cmd: RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/myplugins.txt 
+[36mINFO[0m[0000] Skipping unpacking as no commands require it. 
+[36mINFO[0m[0000] Taking snapshot of full filesystem...        
+[36mINFO[0m[0000] Using files from context: [/workspace/source/plugins.txt] 
+[36mINFO[0m[0000] COPY plugins.txt /usr/share/jenkins/ref/myplugins.txt 
+[36mINFO[0m[0000] Taking snapshot of files...                  
+[36mINFO[0m[0000] RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/myplugins.txt 
+[36mINFO[0m[0000] Found cached layer, extracting to filesystem 
+[36mINFO[0m[0000] Taking snapshot of files...                  
+2019/04/24 09:24:29 existing blob: sha256:38f6dd39b85823bd8b7dedf55493b2571443143909aa32cecfcce74bf0280d18
+2019/04/24 09:24:29 existing blob: sha256:a5a6f2f73cd8abbdc55d0df0d8834f7262713e87d6c8800ea3851f103025e0f0
+2019/04/24 09:24:29 existing blob: sha256:35c66b68003d528ed32d7429fe63d2960ae496fa5f2f0f802c2111f1cfed0276
+2019/04/24 09:24:29 existing blob: sha256:deac9051b7388f7b01c1cf4a5d51eeab1f8e1fe307f64d395627ece2fdba9f71
+2019/04/24 09:24:29 existing blob: sha256:4605281e072a26ab18534ee9b56b16520726f7166098697caebc7c41881e64eb
+2019/04/24 09:24:29 existing blob: sha256:13376592ef33a87170689fba7158355deb71e02150a1732c5aca8234e86e2890
+2019/04/24 09:24:29 existing blob: sha256:756eeba3b1675e8c81588c35921ccc63296ec532776556aaea5cc739cbf57f1a
+2019/04/24 09:24:29 existing blob: sha256:a3c027b2f9fb6001d8375a82fd75eedfa8bb86d364b31a6b6c0e1da1549a0e3e
+2019/04/24 09:24:29 existing blob: sha256:82e1d004f30849390ed0f7fadbbefdd4a0c116d537d2f69ac1fee078c510be9e
+2019/04/24 09:24:29 existing blob: sha256:04fd513cac7e4bcb5c4fa21a8b30fb234b9810c9666902c74ef928dacfb0d750
+2019/04/24 09:24:29 existing blob: sha256:bf691e1ca659eae6941500304d390feff5d00d2158ca95edf9dfb3838960009c
+2019/04/24 09:24:29 existing blob: sha256:43e0730514ffad1a18c952b64cb142bc90d2fb8dae84958e7f4cbe0f45fc77fd
+2019/04/24 09:24:29 existing blob: sha256:73dae24989f4b7d5e9ffab8e282103fd96960a02525281093fac8c2fac3e3e35
+2019/04/24 09:24:29 existing blob: sha256:492e724a2ef48c628f4358ab5789096cbd74347f95a1cf4e5b758d400d3723df
+2019/04/24 09:24:29 existing blob: sha256:812a6dcaec854931e31d0c88e7b77ef4e878486b681e7a1d5735f59f13900e32
+2019/04/24 09:24:29 existing blob: sha256:3c22fac40b66caf65eaefa65a5e2f8876e638cfa16a591a64670887bbb6a0540
+2019/04/24 09:24:29 existing blob: sha256:2747e6c8d8199a7e6ecf647edcf44e82f73293fd8360901529a14f447f574f61
+2019/04/24 09:24:29 existing blob: sha256:30d9dea4b0111d181c33805e3ed2ff9cc8651d029109c7f3a9ebea636ccdddce
+2019/04/24 09:24:29 existing blob: sha256:3665ad25ef383c06bd6f06320a2c23055e4601fb62737ab623295129d6a8cc34
+2019/04/24 09:24:29 existing blob: sha256:dbac173c1029141c329d94ba5905a5488390751b7d1bd1077029fa117f9a6e59
+2019/04/24 09:24:29 existing blob: sha256:73ce08fe35725d6c8aebc13da9fcd964c350db31609ee6c104a355cb66be9c99
+2019/04/24 09:24:29 existing blob: sha256:9cc3a2096311b93043dc9fa430f30d53e90840fc05dc8afaeede55b2567d5220
+2019/04/24 09:24:29 existing blob: sha256:8a61e19ddca3712d892065e655ad1c8596d076e524b6024106207325f9ec017a
+2019/04/24 09:24:29 existing blob: sha256:3a40bc726b4e46183d63528d45b4a4f0c7b628ea2b4ca572e28f780a79d073c1
+2019/04/24 09:24:29 existing blob: sha256:da10371a0dd3566855b31d7f06a01c5dd2a1a98f688259dda6545299ec5a0408
+2019/04/24 09:24:29 pushed blob: sha256:b4797df04a9eda652e30a436a99838ec94626bbb7c0f79e24fb32b8a74a47847
+2019/04/24 09:24:29 pushed blob: sha256:6989d33355a158857b3288f20481ffc4b59c00c6ab2a40f01e83c5ee91faf423
+2019/04/24 09:24:29 pushed blob: sha256:f0af9060763848d5045db6ca5e445cef53583ea65736205ca88414a210ec1c81
+2019/04/24 09:24:29 10.3.240.243:5000/lbaovy/jenkins-serverless-quickstart:0.0.3: digest: sha256:1ddecc494761190504272f7231246956c5fa1eef7d8fa5abb411ddc25c760db3 size: 4634
+Step: build-step-promote-changelog:
+
+Converted /workspace/source to an unshallow repository
+Generating change log from git ref 7bd94977e95967716fab09429b9a3acd17beed76 => ec6499bf736d6131541b18a9276682844a02ae1a
+WARNING: Failed to enrich commits with issues: User.jenkins.io "" is invalid: metadata.name: Required value: name or generateName is required
+WARNING: Failed to enrich commits with issues: User.jenkins.io "" is invalid: metadata.name: Required value: name or generateName is required
+Finding issues in commit messages using git format
+WARNING: No release found for lbaovy/jenkins-serverless-quickstart and tag v0.0.3 so creating a new release
+Updated the release information at https://github.com/lbaovy/jenkins-serverless-quickstart/releases/tag/v0.0.3
+generated: /workspace/source/templates/release.yaml
+Created Release jenkins-serverless-quickstart-0-0-3 resource in namespace **
+Updating PipelineActivity lbaovy-jenkins-serverless-quickstart-master-3 with version 0.0.3
+Updated PipelineActivities lbaovy-jenkins-serverless-quickstart-master-3 with release notes URL: https://github.com/lbaovy/jenkins-serverless-quickstart/releases/tag/v0.0.3
