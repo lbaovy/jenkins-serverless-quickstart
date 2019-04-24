@@ -1,1 +1,14 @@
 buildPack: jenkins
+pipelineConfig:
+  agent: {}
+  pipelines:
+    pullRequest:
+      setup:
+        replace: true
+        steps:
+        - sh: echo hello world
+    release:
+      setup:
+        replace: true
+        steps:
+        - sh: echo "hello world
